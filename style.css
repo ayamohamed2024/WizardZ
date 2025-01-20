@@ -1,0 +1,366 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*--------------------------nav------------------------*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px 0px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(108 104 104);
+    padding: 0 15px;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav figure img {
+    width: 8rem;
+}
+
+li a:hover {
+    border: 3px black solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*-------------------------header----------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.head_content {
+    margin-left: 45px;
+    padding: 30px;
+    animation: animation2 1s ease-out
+}
+
+.head_content h1 {
+    margin-bottom: 15px;
+    line-height: 40px;
+}
+
+.head_content p {
+    font-size: 17px;
+    color: rgb(108 104 104);
+    margin-bottom: 30px
+}
+
+.head_content a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px 34px;
+    border-radius: 11px;
+    background-color: black;
+    display: inline-block;
+    transition: transform 0.3s linear;
+}
+
+.head_content a:hover {
+    transform: scale(0.9);
+    color: black;
+    background-color: white;
+    border: 3px solid black ;
+}
+
+header figure img {
+    padding-right: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+    width: 40rem;
+    animation: animation1 1s ease-out
+}
+
+/*-----------------------brands_section-------------------*/
+.brands {
+    display: flex;
+    gap: 25px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+    animation: animation3 1s ease-out
+}
+
+.brands figure img {
+    width: 6rem;
+    cursor: pointer;
+}
+/*-----------------------service_section-------------------*/
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 45px;
+    padding: 25px;
+    gap: 45px;
+}
+
+.service p {
+    color: rgb(108 104 104);
+    font-weight: bold;
+}
+
+span {
+    background-color: rgba(185, 255, 102, 1);
+    padding: 4px;
+}
+
+.service_cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px 0px;
+    gap: 36px;
+}
+
+.card {
+    position: relative;
+    padding: 40px;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 0px 3px 1px 0px #252423;
+    flex-basis: 500px;
+    transition: transform 0.2s linear;
+}
+
+.card:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.card .card_content img {
+    position: absolute;
+    padding-top: 5px;
+    right: 7%;
+    top: 3%;
+    width: 10rem;
+}
+
+.card a figure {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+.black_card a img {
+    width: 2rem;
+    margin-right: 10px;
+    border-radius: 50px;
+    padding: 8px;
+    background-color: white;
+}
+
+.white_card a img {
+    width: 2rem;
+    margin-right: 16px;
+    border-radius: 50px;
+    padding: 8px;
+    background-color: black;
+}
+
+.black_card a {
+    text-decoration: none;
+    color: white;
+}
+
+.white_card a {
+    text-decoration: none;
+    color: black;
+}
+
+.black_card {
+    background-color: black;
+    color: white;
+}
+
+.black_card span {
+    background-color: white;
+    color: black;
+    padding: 4px;
+}
+
+/*--------------------proposal_section------------------*/
+.free_proposal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(243, 243, 243, 1);
+    margin: 50px;
+    border-radius: 30px;
+}
+
+.free_proposal p {
+    font-size: 17px;
+    color: rgb(108 104 104);
+    line-height: 22px;
+    margin: 24px 0px;
+}
+
+.free_proposal a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px 34px;
+    border-radius: 11px;
+    background-color: black;
+    display: inline-block;
+    transition: transform 0.3s linear;
+}
+
+.free_proposal a:hover {
+    transform: scale(0.9);
+    color: black;
+    background-color: white;
+    border: 3px solid black ;
+
+}
+
+/*-----------------------footer---------------------*/
+.case_study {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 45px;
+    padding: 25px;
+    gap: 45px;
+}
+
+.case_study p {
+    color: rgb(108 104 104);
+    font-weight: bold;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+    margin: 50px;
+    gap: 30px;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.footer_content .line {
+    background-color: whitesmoke;
+    width: 1px;
+    height: 115px;
+}
+
+.case_card p {
+    color: whitesmoke;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+.case_card a {
+    text-decoration: none;
+    color: rgba(185, 255, 102, 1);
+}
+
+.case_card a:hover {
+    color: white;
+}
+
+.case_card img {
+    width: 1rem;
+    margin-left: 11px;
+}
+/*-------------------animation-------------------*/
+@keyframes animation1 {
+    0% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animation2 {
+    0% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animation3 {
+    0% {
+        transform: translateY(200px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+/*-------------media_queries-------------*/
+
+/* small phone */
+@media (max-width: 599px) {
+    header img {
+        display: none;
+    }
+
+    .free_proposal {
+        background-color: white;
+    }
+
+    .free_proposal img {
+        display: none;
+    }
+}
+
+/* big screen phones */
+@media (min-width: 600px) and (max-width: 767px) {
+    header img {
+        display: none;
+    }
+
+    .free_proposal {
+        background-color: white;
+    }
+
+    .free_proposal img {
+        display: none;
+    }
+}
+
+/* labtops */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header img {
+        display: none;
+    }
+
+    .free_proposal {
+        background-color: white;
+    }
+
+    .free_proposal img {
+        display: none;
+    }
+}
